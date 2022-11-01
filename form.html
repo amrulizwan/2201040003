@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Biodata</title>
+  </head>
+  <body>
+    <center>
+      <p><b>Form Biodata</b></p>
+      <table>
+        <tr>
+          <td>NIM</td>
+          <td>:</td>
+          <td><input type="text" name="nim" id="nim" /></td>
+        </tr>
+        <tr>
+          <td>NAMA</td>
+          <td>:</td>
+          <td><input style="width: 260px" type="text" name="nama" id="nama" /></td>
+        </tr>
+        <tr>
+          <td>JENIS KELAMIN</td>
+          <td>:</td>
+          <td><input type="radio" name="jeniskelamin" value="P" checked /> Pria <input type="radio" name="jeniskelamin" value="W" /> Wanita</td>
+        </tr>
+        <tr>
+          <td>JURUSAN</td>
+          <td>:</td>
+          <td>
+            <select name="jurusan" id="jurusan">
+              <option value="">Pilih...</option>
+              <option value="s1rpl">S1 RPL</option>
+              <option value="s1ilkom">S1 ILKOM</option>
+              <option value="s1dkv">S1 DKV</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>HOBBY</td>
+          <td>:</td>
+          <td>
+            <input type="checkbox" name="chkhobby[]" value="Komputer" />Komputer <input type="checkbox" name="chkhobby[]" value="Musik" />Musik <input type="checkbox" name="chkhobby[]" value="Olahraga" />Olahraga
+            <input type="checkbox" name="chkhobby[]" value="Traveling" />Traveling
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top">CATATAN</td>
+          <td style="vertical-align: top">:</td>
+          <td><textarea name="catatan" id="catatan" cols="60" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td>FOTO</td>
+          <td>:</td>
+          <td><input type="file" /></td>
+        </tr>
+        <tr>
+          <td>EMAIL</td>
+          <td>:</td>
+          <td><input style="width: 260px" type="email" /></td>
+        </tr>
+        <tr>
+          <td>SANDI LOGIN</td>
+          <td>:</td>
+          <td><input style="width: 260px" name="sandilogin" type="password" /></td>
+        </tr>
+        <tr>
+          <td>ULANGI SANDI LOGIN</td>
+          <td>:</td>
+          <td><input style="width: 260px" name="ulangsandi" type="password" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td><button type="button">Simpan</button><button type="button">Batal</button><button type="button">Peringatan</button></td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
